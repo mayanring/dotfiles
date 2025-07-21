@@ -75,8 +75,8 @@ function web2app-remove
     set DESKTOP_FILE "$HOME/.local/share/applications/$APP_NAME.desktop"
     set ICON_PATH "$ICON_DIR/$APP_NAME.png"
 
-    rm "$DESKTOP_FILE"
-    rm "$ICON_PATH"
+    rm -f "$DESKTOP_FILE"
+    rm -f "$ICON_PATH"
 end
 
 function refresh-xcompose
